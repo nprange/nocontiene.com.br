@@ -1,5 +1,5 @@
 async function fetchStatus() {
-  const response = await fetch(`${process.env.API_URL}/api/v1/status`);
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/api/v1/status`);
   const responseBody = await response.json();
   return responseBody;
 }
